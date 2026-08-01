@@ -1,0 +1,60 @@
+{
+  "name": "bob-ai-cli",
+  "displayName": "Bob AI CLI",
+  "description": "Smart code assistant for Claude Code and other AI CLIs - copy code references, send to terminal, and use quick action templates",
+  "version": "0.0.9",
+  "publisher": "askbob",
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:bobAI.copyReference",
+    "onCommand:bobAI.sendToTerminal",
+    "onCommand:bobAI.quickAction"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bobAI.copyReference",
+        "title": "Bob AI CLI: Copy Code Reference",
+        "category": "Bob AI CLI"
+      },
+      {
+        "command": "bobAI.sendToTerminal",
+        "title": "Bob AI CLI: Send to Terminal",
+        "category": "Bob AI CLI"
+      },
+      {
+        "command": "bobAI.quickAction",
+        "title": "Bob AI CLI: Quick Action Template",
+        "category": "Bob AI CLI"
+      }
+    ],
+    "configuration": {
+      "title": "Bob AI CLI",
+      "properties": {
+        "bobAiCli.defaultCliCommand": {
+          "type": "string",
+          "default": "claude",
+          "description": "Default AI CLI command to target when sending text to a terminal.",
+          "scope": "window"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.5.4"
+  }
+}
