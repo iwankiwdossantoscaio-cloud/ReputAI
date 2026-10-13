@@ -34,6 +34,18 @@ A aplicação segue uma estrutura modular, organizada para facilitar a manutenç
 
 A estrutura pode variar conforme a implementação atual do projeto.
 
+## 📦 Arquivo Completo do Projeto
+
+O projeto completo da **ReputAí** está disponível no repositório oficial do GitHub, compactado no arquivo `reputai-final.zip`.
+
+O arquivo reúne os arquivos do projeto para consulta, acesso ao código-fonte e análise da implementação.
+
+**Acesse o arquivo completo:**
+
+[📥 Baixar ou visualizar reputai-final.zip no GitHub](https://github.com/iwankiwdossantoscaio-cloud/ReputAI/blob/main/reputai-final.zip)
+
+Para acessar o conteúdo, abra o link acima e utilize a opção de download do GitHub para obter o arquivo ZIP.
+
 ## Instalação e Execução
 
 Para executar o projeto localmente, é necessário ter o Node.js, o npm e o Git instalados.
