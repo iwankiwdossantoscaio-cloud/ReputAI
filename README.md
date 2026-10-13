@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# Documentação do Projeto
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Este projeto é uma aplicação web desenvolvida com tecnologias modernas para oferecer uma experiência rápida, responsiva e intuitiva aos usuários.
 
-## How can I edit this code?
+A aplicação utiliza React e TypeScript para estruturar a interface, Vite para o ambiente de desenvolvimento, Tailwind CSS para a estilização e shadcn/ui para a construção de componentes reutilizáveis.
 
-There are several ways of editing your application.
+O projeto é desenvolvido e mantido com o apoio da plataforma Lovable, com possibilidade de integração ao GitHub para versionamento e gerenciamento do código-fonte.
 
-**Use Lovable**
+## Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **React:** desenvolvimento da interface e dos componentes da aplicação.
+- **TypeScript:** tipagem estática e maior confiabilidade do código.
+- **Vite:** inicialização rápida do ambiente de desenvolvimento e geração da versão de produção.
+- **Tailwind CSS:** estilização e criação de layouts responsivos.
+- **shadcn/ui:** componentes de interface reutilizáveis e personalizáveis.
+- **Lovable:** plataforma de desenvolvimento e evolução da aplicação.
+- **GitHub:** versionamento e gerenciamento do código-fonte, quando integrado ao projeto.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Estrutura do Projeto
 
-**Use your preferred IDE**
+A aplicação segue uma estrutura modular, organizada para facilitar a manutenção e a evolução do código.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- `src/`: código-fonte principal da aplicação.
+- `src/components/`: componentes reutilizáveis da interface.
+- `src/pages/`: páginas da aplicação, quando utilizadas.
+- `src/lib/`: funções auxiliares e utilitários.
+- `src/hooks/`: hooks personalizados do React, quando existentes.
+- `public/`: arquivos estáticos e recursos públicos.
+- `package.json`: dependências e scripts do projeto.
+- `vite.config.ts`: configuração do Vite.
+- `tsconfig.json`: configuração do TypeScript.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A estrutura pode variar conforme a implementação atual do projeto.
 
-Follow these steps:
+## Instalação e Execução
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Para executar o projeto localmente, é necessário ter o Node.js, o npm e o Git instalados.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 1. Clonar o repositório
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 2. Acessar a pasta do projeto
+
+```bash
+cd <NOME_DO_PROJETO>
+```
+
+### 3. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 4. Iniciar o ambiente de desenvolvimento
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Após a inicialização, acesse o endereço local informado no terminal para visualizar a aplicação no navegador.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Desenvolvimento
 
-**Use GitHub Codespaces**
+O desenvolvimento pode ser realizado diretamente pela plataforma Lovable ou localmente, utilizando um editor de código de preferência.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+As alterações devem seguir a estrutura existente do projeto, priorizando:
 
-## What technologies are used for this project?
+- Organização e reutilização dos componentes.
+- Código legível e de fácil manutenção.
+- Interface responsiva para diferentes tamanhos de tela.
+- Consistência visual e experiência do usuário.
+- Boas práticas de segurança e desempenho.
 
-This project is built with:
+## Scripts Disponíveis
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Os comandos abaixo são comuns em projetos Vite. A disponibilidade de cada um depende da configuração do `package.json`.
 
-## How can I deploy this project?
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Inicia o ambiente de desenvolvimento. |
+| `npm run build` | Gera a versão de produção. |
+| `npm run preview` | Permite visualizar localmente a versão de produção. |
+| `npm run lint` | Executa verificações de código, caso configurado. |
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Build e Publicação
 
-## Can I connect a custom domain to my Lovable project?
+Para gerar a versão de produção da aplicação, execute:
 
-Yes, you can!
+```bash
+npm run build
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Os arquivos gerados ficam normalmente na pasta `dist/` e podem ser publicados em um serviço de hospedagem compatível com aplicações Vite.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Também é possível publicar a aplicação diretamente pela plataforma Lovable, utilizando a opção de publicação disponível no projeto.
+
+## Configuração e Segurança
+
+Caso a aplicação utilize APIs, banco de dados ou serviços externos, suas configurações devem seguir as práticas recomendadas de segurança.
+
+- Não disponibilize credenciais privadas no código do frontend.
+- Não envie arquivos `.env` com informações sensíveis ao repositório.
+- Utilize variáveis de ambiente para configurações apropriadas.
+- Proteja os recursos do backend com autenticação e regras de autorização, quando aplicáveis.
+- Valide os dados recebidos de formulários e serviços externos.
+
+As configurações específicas devem refletir os serviços efetivamente utilizados pela aplicação.
+
+## Links Úteis
+
+- [Lovable](https://lovable.dev/)
+- [Documentação do Lovable](https://docs.lovable.dev/)
+- [Documentação do React](https://react.dev/)
+- [Documentação do TypeScript](https://www.typescriptlang.org/docs/)
+- [Documentação do Vite](https://vite.dev/guide/)
+- [Documentação do Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentação do shadcn/ui](https://ui.shadcn.com/)
+- [Documentação do GitHub](https://docs.github.com/)
+
+---
+
+Desenvolvido com React, TypeScript, Vite, Tailwind CSS e shadcn/ui.
